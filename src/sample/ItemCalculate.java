@@ -19,7 +19,7 @@ public class ItemCalculate {
 		// ポイントの計算
 		int price = 270;
 		float pointRate = 0.03f;
-//		float point = (float) price * pointRate;
+		// float point = (float) price * pointRate;
 		float point = price * pointRate;
 
 		System.out.println(point + "pt");
@@ -52,24 +52,24 @@ public class ItemCalculate {
 		message += "購入しますか？";
 		System.out.println(message);
 
-		//問題1
+		// 問題1
 		int hp = 5;
 		hp++;
 		hp -= 4;
 		hp *= 4;
 		hp /= 2;
-		
+
 		System.out.println(hp);
 
-		//問題2
+		// 問題2
 		String user_name = "Yoshikawa";
 		int age = 46;
 
 		String profile_message = user_name + "の年齢は" + age + "歳です。";
 		System.out.println(profile_message);
 
-		//問題3
-		//ex.1
+		// 問題3
+		// ex.1
 		int water_price = 88;
 		int water_amount = 5;
 		int coffee_price = 120;
@@ -80,12 +80,12 @@ public class ItemCalculate {
 		float total_price = (water_total_price + coffee_total_price) * (1.0f - 0.1f);
 		System.out.println("Total Price:" + (int) total_price);
 
-		//ex.2
+		// ex.2
 		int itemPrice;
 		int itemAmount;
 		int totalPrice1;
 		int totalPrice2;
-		
+
 		itemPrice = 88;
 		itemAmount = 5;
 		totalPrice1 = itemPrice * itemAmount;
@@ -93,17 +93,17 @@ public class ItemCalculate {
 		itemPrice = 120;
 		itemAmount = 3;
 		totalPrice2 = itemPrice * itemAmount;
-		
+
 		float totalPrice = (totalPrice1 + totalPrice2) * 0.9f;
 		System.out.println("Total Price:" + (int) totalPrice);
 
-		//問題4
+		// 問題4
 		/*
-		国語：76点
-		数学：83点
-		理科：69点
-		社会：91点
-		*/
+		 * 国語：76点
+		 * 数学：83点
+		 * 理科：69点
+		 * 社会：91点
+		 */
 
 		int score1 = 76;
 		int score2 = 83;
@@ -112,6 +112,58 @@ public class ItemCalculate {
 
 		float average = (score1 + score2 + score3 + score4) / 4;
 		System.out.println("Average:" + average);
+
+		// 比較演算（ひかくえんざん）
+		boolean is_match;
+		price = 100;
+		is_match = (price == 50);
+		System.out.println(is_match);
+
+		price = 100;
+		is_match = (price > 50);
+		System.out.println(is_match);
+
+		price = 50;
+		is_match = (price <= 50);
+		System.out.println(is_match);
+
+		price = 50;
+		is_match = (price > 50);
+		System.out.println(is_match);
+
+		price = 50;
+		is_match = (price != 50);
+		System.out.println(is_match);
+
+		String str1 = "20";
+		String str2 = "20";
+		int number1 = 20;
+		int number2 = 30;
+		// String同士の比較
+		is_match = (str1 == str2);
+		System.out.println(is_match);
+		// int同士の比較
+		is_match = (number1 == number2);
+		System.out.println(is_match);
+
+		// is_match = (str1 == number2);
+		// System.out.println(is_match);
+
+		int temperature = 30;
+		boolean is_hot = (temperature > 30);
+		boolean is_cold = (temperature < 10);
+		System.out.println(is_hot);
+		System.out.println(is_cold);
+
+		String character_name = "Tokyo";
+		String monster_name = "スライム";
+		int character_hp = 20;
+		int monster_hp = 5;
+		int damage = 10;
+		String battle_message = character_name + "のこうげき！";
+		String attack_message = (monster_hp > damage) ? "に" + damage + "のダメージ" : "はたおれた！";
+		battle_message += monster_name + attack_message;
+		System.out.println(battle_message);
 	}
 
 }
