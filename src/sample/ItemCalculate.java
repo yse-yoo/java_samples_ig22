@@ -17,13 +17,18 @@ public class ItemCalculate {
 		System.out.println(mod);
 
 		//ポイントの計算
-		int price = 200;
-		float pointRate = 0.05f;
-		float point = (float) price * pointRate;
+		int price = 270;
+		float pointRate = 0.03f;
+//		float point = (float) price * pointRate;
+		float point = price * pointRate;
 
 		System.out.println(point);
 		System.out.println(point + "pt");
 		System.out.println((int) point + "pt");
+	
+		String itemName = "コーヒー";
+		String message = itemName + "の価格は" + price + "円です。";
+		System.out.println(message);
 	}
 
 }
