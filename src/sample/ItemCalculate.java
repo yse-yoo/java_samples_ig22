@@ -77,10 +77,41 @@ public class ItemCalculate {
 
 		int water_total_price = water_price * water_amount;
 		int coffee_total_price = coffee_price * coffee_amount;
-		float total_price = (water_total_price + coffee_total_price) * 0.9f;
+		float total_price = (water_total_price + coffee_total_price) * (1.0f - 0.1f);
 		System.out.println("Total Price:" + (int) total_price);
 
+		//ex.2
+		int itemPrice;
+		int itemAmount;
+		int totalPrice1;
+		int totalPrice2;
+		
+		itemPrice = 88;
+		itemAmount = 5;
+		totalPrice1 = itemPrice * itemAmount;
 
+		itemPrice = 120;
+		itemAmount = 3;
+		totalPrice2 = itemPrice * itemAmount;
+		
+		float totalPrice = (totalPrice1 + totalPrice2) * 0.9f;
+		System.out.println("Total Price:" + (int) totalPrice);
+
+		//問題4
+		/*
+		国語：76点
+		数学：83点
+		理科：69点
+		社会：91点
+		*/
+
+		int score1 = 76;
+		int score2 = 83;
+		int score3 = 69;
+		int score4 = 91;
+
+		float average = (score1 + score2 + score3 + score4) / 4;
+		System.out.println("Average:" + average);
 	}
 
 }
