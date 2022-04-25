@@ -44,6 +44,11 @@ public class Condition {
 			case "月":
 				garbage = "燃えるゴミ";
 				break;
+
+			default:
+				//それ以外
+				garbage = "回収なし";
+				break;
 		}
 		
 		
