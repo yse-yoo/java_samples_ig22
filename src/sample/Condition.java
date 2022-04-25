@@ -4,7 +4,7 @@ public class Condition {
 
 	public static void main(String[] args) {
 		// 距離（きょり）km
-		float distance = 5.0f;
+		float distance = 1.0f;
 		// 移動手段（いどうしゅだん）
 		String movingMethod;
 		// 雨かどうか？
@@ -26,10 +26,45 @@ public class Condition {
 				movingMethod = "徒歩";
 			}
 		} else {
+			// 雨でなければ
 			movingMethod = "家にいます";
 		}
 
 		System.out.println(movingMethod);
+
+		
+		//ゴミの回収（かいしゅう）
+		//曜日
+		String weekday = "月";
+		//ゴミの回収
+		String garbage = "";
+		
+		//曜日を判別（はんべつ）
+		switch (weekday) {
+			case "月":
+				garbage = "燃えるゴミ";
+				break;
+		}
+		
+		
+		System.out.println(garbage);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
