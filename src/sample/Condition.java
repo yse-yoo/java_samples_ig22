@@ -42,6 +42,7 @@ public class Condition {
 		//曜日を判別（はんべつ）
 		switch (weekday) {
 			case "月":
+			case "金":
 				garbage = "燃えるゴミ";
 				break;
 
