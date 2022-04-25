@@ -27,6 +27,7 @@ public class Item {
 		System.out.println(rate);
 
 		//定数（決まった数）
+		//constant
 		final float TAX_RATE = 0.8f;
 		System.out.println(TAX_RATE);
 	}
