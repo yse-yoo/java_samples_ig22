@@ -45,6 +45,10 @@ public class Condition {
 				garbage = "燃えるゴミ";
 				break;
 
+			case "水":
+				garbage = "燃えないゴミ";
+				break;
+
 			default:
 				//それ以外
 				garbage = "回収なし";
@@ -53,19 +57,6 @@ public class Condition {
 		
 		
 		System.out.println(garbage);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		
