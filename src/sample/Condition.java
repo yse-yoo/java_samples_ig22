@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Calendar;
+
 public class Condition {
 
 	public static void main(String[] args) {
@@ -36,17 +38,22 @@ public class Condition {
 		//ゴミの回収（かいしゅう）
 		//曜日
 		String weekday = "月";
+		//カレンダー
+		Calendar cal = Calendar.getInstance();
+		int week = cal.get(Calendar.DAY_OF_WEEK);
+		System.out.println(week);
+		
 		//ゴミの回収
 		String garbage = "";
 		
 		//曜日を判別（はんべつ）
-		switch (weekday) {
-			case "月":
-			case "金":
+		switch (week) {
+			case Calendar.MONDAY: 
+			case Calendar.FRIDAY: 
 				garbage = "燃えるゴミ";
 				break;
 
-			case "水":
+			case Calendar.WEDNESDAY: 
 				garbage = "燃えないゴミ";
 				break;
 
