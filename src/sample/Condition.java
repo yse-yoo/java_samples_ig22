@@ -67,6 +67,20 @@ public class Condition {
 		System.out.println(garbage);
 		
 		
+		//演習（条件分岐）
+		//問題1
+		int age = 18;
+		boolean isBlackList = false;
+		boolean hasBankAccounts = true;
+		String message = "クレジットカードを作成できません";
+		if (!isBlackList && age >= 18 && age < 65) {
+			if (hasBankAccounts) {
+				message = "クレジットカード作成可能です";
+			} else {
+				message = "審査が必要です";
+			}
+		}
+		System.out.println(message);	
 		
 		
 	}
