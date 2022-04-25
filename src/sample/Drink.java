@@ -32,9 +32,14 @@ public class Drink {
 		//グー、チョキ、パー、Rock & Scissors & Paper
 		String[] hands = {"グー", "チョキ", "パー"};
 
-		//1 - 3 までの整数(せいすう)
+		//0 - 2 までの整数(せいすう)
 		Random rand = new Random();
 		int handIndex = rand.nextInt(3);
+		System.out.println(handIndex);
+
+		String pcHand = hands[handIndex];
+		System.out.println(pcHand);
+
 
 	}
 
