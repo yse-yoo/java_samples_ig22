@@ -15,6 +15,9 @@ public class Method {
 
 		totalPrice = calculateTotalPrice(170, 7);
 		System.out.println(totalPrice);
+		
+		greet("横浜　太郎");
+		greet("横浜　太郎", "曇り");
 	}
 	
 	public static Float calculate(Float x) {
@@ -26,4 +29,13 @@ public class Method {
 		int totalPrice = price * amount;
 		return totalPrice;
 	}
+	
+	public static void greet(String name) {
+		System.out.println(name + "さん、こんにちは！");
+	}
+	
+	public static void greet(String name, String weather) {
+		System.out.println(name + "さん、今日の天気は" + weather + "です");
+	}
+	
 }
