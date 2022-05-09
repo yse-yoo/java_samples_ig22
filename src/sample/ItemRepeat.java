@@ -57,6 +57,33 @@ public class ItemRepeat {
 			System.out.println();
 		}
 
+		//while
+		int i = 0;
+		while (i <= 10) {
+			i++;
+			System.out.println(i);
+		}
+		System.out.println(i);
+		
+		//1から1000までの整数、7の倍数を５つ
+		//7 14 21 28 35
+		int currentNumber = 1;
+		int maxNumber = 1000;
+		int index = 0;
+		int limit = 5;
+
+		while (currentNumber < maxNumber) {
+			if (currentNumber % 7 == 0) {
+				System.out.println(currentNumber);
+				index++;
+			}
+
+			if (index == limit) {
+				//ループ終了
+				break;
+			}
+			currentNumber++;
+		}
 	}
 
 }
