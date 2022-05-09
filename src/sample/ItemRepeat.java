@@ -23,6 +23,17 @@ public class ItemRepeat {
 			System.out.println();
 		}
 
+		for (int x = 1; x <= 9; x++) {
+
+			for (int y = 1; y <= 9; y++) {
+				int answer = x * y;
+				String message = answer + " ";
+				System.out.print(message);
+			}
+			System.out.println();
+		}
+
+
 	}
 
 }
