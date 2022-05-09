@@ -81,7 +81,40 @@ public class ItemRepeat {
 			}
 			currentNumber++;
 		}
+		
+		
+		int sum = 0;
+		for (int j = 1; j <= 3000; j++) {
+			sum += j;
+		}
+		System.out.println(sum);
+		
 
+		count = 0;
+		int number = 1;
+		int multiple = 17;
+		
+		while (number < 1000) {
+			count++;
+			number = multiple * count;
+			if (number > 1000) {
+				break;
+			}
+			System.out.println(count + ":" + number);
+		}
+		System.out.println(multiple + "の倍数は" + count);
+		
+		
+		float money = 1000000;
+		float target = 2000000;
+		float interestRate = 0.01f;
+		int year = 0;
+
+		while (money < target) {
+			money *= (1 + interestRate);
+			year++;
+		}
+		System.out.println(year + "年後に" + money + "円");
 	}
 
 }
