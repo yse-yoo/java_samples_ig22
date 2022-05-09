@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Random;
+
 public class ItemRepeat {
 
 	public static void main(String[] args) {
@@ -33,6 +35,23 @@ public class ItemRepeat {
 				String message = answer + " ";
 				System.out.print(message);
 
+			}
+
+			System.out.println();
+		}
+		
+		Random rand = new Random();
+		String[] marks = {"〇", "●"};
+
+
+		for (int x = 1; x <= 5; x++) {
+
+			for (int y = 1; y < 5; y++) {
+				int markIndex = rand.nextInt(marks.length);
+				String mark = marks[markIndex];
+				String result = "|" + mark;
+				
+				System.out.print(result);
 			}
 
 			System.out.println();
