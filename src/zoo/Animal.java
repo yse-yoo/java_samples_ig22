@@ -1,7 +1,7 @@
 package zoo;
 
 public class Animal {
-	//フィールド	
+	//フィールド（プロパティ）	
 	public String type;
 	public String name;
 	public String crying;

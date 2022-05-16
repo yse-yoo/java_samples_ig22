@@ -3,9 +3,21 @@ package rpg;
 import java.util.Random;
 
 public class Character {
+	
+	//コンストラクタ
+	public Character(String name, String job) {
+		super();
+		System.out.println("キャラクター作成");
+
+		this.name = name;
+		this.job = job;
+		this.hp = 50;
+	}
+
 	//フィールド
 	//キャラクター名
 	public String name;
+
 	//職業
 	public String job;
 	//体力
