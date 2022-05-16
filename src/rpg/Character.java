@@ -1,5 +1,7 @@
 package rpg;
 
+import java.util.Random;
+
 public class Character {
 	
 	//キャラクター名
@@ -26,6 +28,10 @@ public class Character {
 	//戦う
 	public void attack(Character character) {
 		int damage = 1;
+
+		Random rand = new Random();
+		damage = rand.nextInt(10);
+
 		//ダメージをあたえる
 		character.hp -= damage;
 	}

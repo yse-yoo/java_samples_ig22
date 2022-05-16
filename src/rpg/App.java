@@ -28,7 +28,6 @@ public class App {
 		
 		//wizardがwarriorに攻撃
 		wizard.attack(warrior);
-		wizard.attack(warrior);
 		System.out.println(warrior.hp);
 		
 		
