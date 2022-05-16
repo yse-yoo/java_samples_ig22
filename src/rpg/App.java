@@ -2,7 +2,7 @@ package rpg;
 
 public class App {
 
-	public static void man(String[] args) {
+	public static void main(String[] args) {
 		//インスタンス（instance）
 		Character wizard = new Character();
 		System.out.println(wizard);
