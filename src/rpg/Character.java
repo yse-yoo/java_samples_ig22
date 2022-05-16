@@ -10,4 +10,11 @@ public class Character {
 	public int hp;
 	
 
+	//インスタンスメソッド（instance method）
+	//歩く
+	public void walk(String direction) {
+		String message = this.name + " move " + direction;
+		System.out.println(message);
+	}
+	
 }

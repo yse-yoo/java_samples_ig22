@@ -15,6 +15,8 @@ public class App {
 		System.out.println(wizard.job);
 		System.out.println(wizard.hp);
 		
+		wizard.walk("left");
+		
 	}
 
 }
