@@ -9,9 +9,9 @@ public class AnimalApp {
 		dog.name = "タロー";
 		dog.crying = "わん！";
 
-		System.out.println(dog.type);
-		System.out.println(dog.name);
-		System.out.println(dog.crying);
+		dog.walk();
+		dog.cry();
+		dog.escape();
 	}
 
 }

@@ -3,7 +3,7 @@ package rpg;
 import java.util.Random;
 
 public class Character {
-	
+	//フィールド
 	//キャラクター名
 	public String name;
 	//職業
