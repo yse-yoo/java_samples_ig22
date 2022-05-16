@@ -26,6 +26,11 @@ public class App {
 		
 		wizard.talk(warrior, "バトルしよう！");
 		
+		//wizardがwarriorに攻撃
+		wizard.attack(warrior);
+		wizard.attack(warrior);
+		System.out.println(warrior.hp);
+		
 		
 	}
 
