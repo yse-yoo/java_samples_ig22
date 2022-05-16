@@ -18,6 +18,14 @@ public class App {
 		//インスタンスメソッドの実行
 		wizard.walk("left");
 		
+		//キャラクター作成
+		Character warrior = new Character();
+		warrior.name = "ボブ";
+		warrior.job = "warrior";
+		warrior.hp = 50;
+		
+		wizard.talk(warrior, "バトルしよう！");
+		
 		
 	}
 
